@@ -8,6 +8,11 @@ import android.view.MenuItem
 import com.google.android.material.appbar.MaterialToolbar
 
 class MainActivity : AppCompatActivity() {
+
+    val homeFragment = HomeFragment()
+    val polandFragment = PolandFragment()
+    val franceFragment = FranceFragment()
+    val turkeyFragment = TurkeyFragment()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -15,6 +20,10 @@ class MainActivity : AppCompatActivity() {
         val toolbar = findViewById<MaterialToolbar>(R.id.topAppBar)
         setSupportActionBar(toolbar)
 
+        supportFragmentManager.beginTransaction().apply {
+            replace(R.id.flFragment, homeFragment)
+            commit()
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -25,15 +34,24 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             R.id.poland_action -> {
-                Log.i("menuItemClicked", "poland")
+                supportFragmentManager.beginTransaction().apply {
+                    replace(R.id.flFragment, polandFragment)
+                    commit()
+                }
                 true
             }
             R.id.france_action -> {
-                Log.i("menuItemClicked", "france")
+                supportFragmentManager.beginTransaction().apply {
+                    replace(R.id.flFragment, franceFragment)
+                    commit()
+                }
                 true
             }
             R.id.turkey_action -> {
-                Log.i("menuItemClicked", "turkey")
+                supportFragmentManager.beginTransaction().apply {
+                    replace(R.id.flFragment, turkeyFragment)
+                    commit()
+                }
                 true
             }
             else -> super.onOptionsItemSelected(item)

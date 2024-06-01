@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PolandFragment"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/turkey1"
+                android:contentDescription="turkey1.img"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/turkey2"
+                android:contentDescription="turkey2.img"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:text="Turcja, Republika Turcji – państwo położone w Azji Zachodniej na półwyspie
+        Azja Mniejsza, a częściowo również w Europie Południowo-Wschodniej, ze stolicą w
+        Ankarze. Graniczy w Europie z Bułgarią i Grecją, natomiast w Azji z Syrią, Irakiem,
+        Iranem, Azerbejdżanem, Armenią i Gruzją."
+                android:gravity="center"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/turkey3"
+                android:contentDescription="turkey3.img"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

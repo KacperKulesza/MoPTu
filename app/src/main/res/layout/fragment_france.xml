@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PolandFragment"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/france1"
+                android:contentDescription="france1.img"
+                android:gravity="center"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/france2"
+                android:contentDescription="france2.img"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="5dp"
+                android:textSize="15sp"
+                android:text="Francja, Republika Francuska – państwo,
+        którego część metropolitalna znajduje się w Europie Zachodniej oraz częściowo
+        w Europie Południowej, posiadające także zamorskie terytoria na innych kontynentach:
+        w Ameryce Północnej: Saint-Pierre i Miquelon"
+                android:gravity="center"/>
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/france3"
+                android:contentDescription="france3.img"
+                android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>
