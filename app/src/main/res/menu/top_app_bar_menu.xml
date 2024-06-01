@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/poland_action"
+        android:title="Poland" />
+    <item
+        android:id="@+id/france_action"
+        android:title="France" />
+    <item
+        android:id="@+id/turkey_action"
+        android:title="Turkey" />
+</menu>
